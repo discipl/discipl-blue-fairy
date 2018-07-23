@@ -5,3 +5,4 @@ experimental Chatterbot / AGI that runs privately on your own device and can int
 also investigation on how to integrate with Siri, Bigsby, Alexa and the like
 
 ![alt text](https://img00.deviantart.net/d86a/i/2006/098/1/e/blue_fairy_and_david_by_mysterio1274.jpg "David: I need my mommy!")
+(https://www.deviantart.com/mysterio1274/art/Blue-Fairy-and-David-31549345)
