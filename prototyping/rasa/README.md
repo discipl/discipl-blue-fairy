@@ -6,9 +6,9 @@ Requirements:
 
 Installation:
 
-pipenv shell --python 3.7
-pip install rasa
-rasa train
+- pipenv shell --python 3.7
+- pip install rasa
+- rasa train
 
 Usage:
 
