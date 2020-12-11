@@ -1,0 +1,96 @@
+{
+    "acts": [
+        {
+            "act": "<<inschrijven-socialehuur-support>>",
+            "actor": "[person]",
+            "action": "[inschrijven-socialehuur-support]",
+            "object": "[support-checklist-item-socialehuur]",
+            "recipient": "[person]",
+            "preconditions": "[age-change-18-shelter] AND [woontNietThuis]",
+            "create": [
+                "<<inschrijven-socialehuur>>"
+            ],
+            "terminate": [],
+            "version": "1",
+            "reference": "https://www.rijksoverheid.nl/onderwerpen/achttien-jaar-worden/vraag-en-antwoord/checklist-bij-18-jaar-worden#Wonen",
+            "sourcetext": "",
+            "explanation": ""
+        },
+        {
+            "act": "<<inschrijven-socialehuur>>",
+            "actor": "[person]",
+            "action": "[inschrijven-socialehuur]",
+            "object": "",
+            "recipient": "",
+            "preconditions": "[wil-inschrijven-socialehuur]",
+            "create": [
+                "did:discipl:onfas:shelter:where=[waar],how=socialehuur"
+            ],
+            "terminate": [],
+            "version": "1",
+            "reference": "https://www.rijksoverheid.nl/onderwerpen/achttien-jaar-worden/vraag-en-antwoord/checklist-bij-18-jaar-worden#Wonen",
+            "sourcetext": "",
+            "explanation": ""
+        },
+    ],
+    "facts": [
+      {
+          "fact": "[person]",
+          "function": "[]",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "",
+          "explanation": ""
+      },
+      {
+          "fact": "[age-change-18-shelter]",
+          "function": "did:discipl:onfas:support:why=age-change,age=18,what=shelter",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "Heb je behoefte aan meer informatie rond je woningsbehoefte bij het worden van 18 jaar?",
+          "explanation": ""
+      },
+      {
+          "fact": "[support-checklist-item-socialehuur]",
+          "function": "[]",
+          "version": "1",
+          "reference": "https://www.rijksoverheid.nl/onderwerpen/achttien-jaar-worden/vraag-en-antwoord/checklist-bij-18-jaar-worden",
+          "sourcetext": "Ben je op zoek naar een huurwoning? Vanaf 18 jaar kom je misschien in aanmerking voor een sociale-huurwoning.",
+          "explanation": "Bij een sociale-huurwoning gelden maximale huurprijzen en een maximale huurverhoging. De wachttijd voor een sociale huurwoning kan enkele jaren zijn.
+          Inschrijven: Je moet je inschrijven bij de organisatie die zorgt voor de verdeling van sociale-huurwoningen in jouw gemeente. Welke organisatie dit is, kun je nagaan bij je gemeente.",
+      },
+      {
+          "fact": "[woontNietThuis]",
+          "function": "NOT [woontThuis]",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "",
+          "explanation": ""
+      },
+      {
+          "fact": "[woontThuis]",
+          "function": "",
+          "version": "1",
+          "reference": "https://www.rijksoverheid.nl/onderwerpen/achttien-jaar-worden/vraag-en-antwoord/checklist-bij-18-jaar-worden",
+          "sourcetext": "Woon je thuis?",
+          "explanation": "Woon je thuis en blijft dat zo?"
+      },
+      {
+          "fact": "[wil-inschrijven-socialehuur]",
+          "function": "",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "Wil je je inschrijven voor een sociale huurwoning?",
+          "explanation": ""
+      },
+      {
+          "fact": "[waar]",
+          "function": "type=did:discipl:...:socialehuur-kerngebieden",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "In welk kerngebied wil je je inschrijven?",
+          "explanation": ""
+      }
+    ],
+    "duties": []
+}

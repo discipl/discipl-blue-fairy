@@ -1,0 +1,47 @@
+{
+    "acts": [
+        {
+            "act": "<<life-event-age-18-support-wonen>>",
+            "actor": "[person]",
+            "action": "[life-event-age-18-support-wonen]",
+            "object": "[support-checklist-item-wonen]",
+            "recipient": "[person]",
+            "preconditions": "[age-change-18]",
+            "create": [
+                "did:discipl:onfas:support:why=age-change,age=18,what=shelter"
+            ],
+            "terminate": [],
+            "version": "1",
+            "reference": "https://www.rijksoverheid.nl/onderwerpen/achttien-jaar-worden/wonen",
+            "sourcetext": "18 jaar worden: wat moet ik regelen rond mijn woonbehoefte?",
+            "explanation": "Als je 18 wordt zijn er een aantal dingen rond je woonbehoefte die je moet/kan regelen.",
+        },
+    ],
+    "facts": [
+      {
+          "fact": "[person]",
+          "function": "[]",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "",
+          "explanation": ""
+      },
+      {
+          "fact": "[support-checklist-item-wonen]",
+          "function": "did:discipl:onfas:what=shelter",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "Wonen",
+          "explanation": ""
+      },
+      {
+          "fact": "[age-change-18]",
+          "function": "did:discipl:onfas:support:why=age-change,age=18",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "Heb je behoefte aan meer informatie rond het worden van 18 jaar?",
+          "explanation": ""
+      }
+    ],
+    "duties": []
+}

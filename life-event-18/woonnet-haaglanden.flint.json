@@ -1,0 +1,48 @@
+{
+    "acts": [
+        {
+            "act": "<<inschrijven-socialehuur-woonnethaaglanden>>",
+            "actor": "[person]",
+            "action": "[inschrijven-socialehuur-woonnethaaglanden]",
+            "object": "[inschrijving]",
+            "recipient": "[woonnet-haaglanden]",
+            "preconditions": "[shelter-haaglanden]",
+            "create": [
+                "<inschrijven-socialehuur>"
+            ],
+            "terminate": [],
+            "version": "1",
+            "reference": "https://www.woonnethaaglanden.net",
+            "sourcetext": "Wil je je inschrijven voor sociale huur bij Woonnet Haaglanden? De kosten bedragen EU 12.50 per jaar.",
+            "explanation": ""
+        },
+    ],
+    "facts": [
+      {
+          "fact": "[person]",
+          "function": "[]",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "",
+          "explanation": ""
+      },
+      {
+          "fact": "[woonnethaaglanden]",
+          "function": "[]",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "",
+          "explanation": ""
+      },
+      {
+          "fact": "[shelter-haaglanden]",
+          "function": "did:discipl:onfas:shelter:where=kerngebied=haaglanden:how=socialehuur",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "Heb je behoefte aan sociale huur in kerngebied Haaglanden (Woonnet Haaglanden)?",
+          "explanation": ""
+      },
+    ],
+    "duties": [
+    ]
+}

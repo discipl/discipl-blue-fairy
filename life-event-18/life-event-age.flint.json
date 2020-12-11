@@ -1,0 +1,103 @@
+{
+    "acts": [
+        {
+            "act": "<<life-event-age>>",
+            "actor": "[person]",
+            "action": "[age-support]",
+            "object": "[support-checklist]",
+            "recipient": "[person]",
+            "preconditions": "[want-support] OR [age-change]",
+            "create": [
+                "did:discipl:onfas:support:why=age-change,age=[age]"
+            ],
+            "terminate": [],
+            "version": "1",
+            "reference": "https://www.rijksoverheid.nl/onderwerpen/nieuweleeftijd",
+            "sourcetext": "Je leeftijd veranderd en je wil support bij dingen die er voor je veranderen en die je moet/kan gaan regelen.",
+            "explanation": "",
+        },
+    ],
+    "facts": [
+      {
+          "fact": "[person]",
+          "function": "[]",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "",
+          "explanation": ""
+      },
+      {
+          "fact": "[support-checklist]",
+          "function": "[]",
+          "version": "1",
+          "reference": "https://www.rijksoverheid.nl/onderwerpen/nieuweleeftijd",
+          "sourcetext": "Je ziet hier een overzicht dat zo veel mogelijk bij jou past. Misschien heb je een deel van de informatie niet nodig. Maar je kunt er later wel mee te maken krijgen als je situatie verandert. Bekijk wat je moet regelen en waar je recht op hebt.",
+          "explanation": ""
+      },
+      {
+          "fact": "[age-change]",
+          "function": "[age-change-official] OR [indicatedAgeChange]",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "",
+          "explanation": ""
+      },
+      {
+        "fact": "[age-change-official]",
+        "function": "did:discipl:brp:geboortedatum+60<now()",
+        "version": "1",
+        "reference": "",
+        "sourcetext": "Volgens informatie uit de BRP ben je binnenkort jarig.",
+        "explanation": ""
+      },
+      {
+          "fact": "[age]",
+          "function": "([specific] AND [specificAge]) OR [nextAge]",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "",
+          "explanation": ""
+      },
+      {
+          "fact": "[specific]",
+          "function": "",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "Wil je meer weten over je eerstvolgende leeftijd of een bepaalde andere leeftijd?",
+          "explanation": ""
+      },
+      {
+          "fact": "[nextAge]",
+          "function": "did:discipl:brp:leeftijd+1",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "Hoe oud wordt je?",
+          "explanation": ""
+      },
+      {
+        "fact": "[specificAge]",
+        "function": "",
+        "version": "1",
+        "reference": "",
+        "sourcetext": "Rond het worden van welke leeftijd wil je meer weten?",
+        "explanation": ""
+      },
+      {
+          "fact": "[indicatedAgeChange]",
+          "function": "",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "Ben je binnenkort jarig?",
+          "explanation": ""
+      },
+      {
+          "fact": "[want-support]",
+          "function": "",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "Wil je hulp bij wat je kan/moet regelen wanneer je leeftijd veranderd?",
+          "explanation": ""
+      }
+    ],
+    "duties": []
+}
