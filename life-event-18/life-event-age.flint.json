@@ -60,7 +60,7 @@
       },
       {
           "fact": "[specific]",
-          "function": "",
+          "function": "intent:bepaalde",
           "version": "1",
           "reference": "",
           "sourcetext": "Wil je meer weten over je eerstvolgende leeftijd of een bepaalde andere leeftijd?",
@@ -68,7 +68,7 @@
       },
       {
           "fact": "[nextAge]",
-          "function": "did:discipl:brp:leeftijd+1",
+          "function": "slot:leeftijd=did:discipl:brp:leeftijd+1",
           "version": "1",
           "reference": "",
           "sourcetext": "Hoe oud wordt je?",
@@ -76,7 +76,7 @@
       },
       {
         "fact": "[specificAge]",
-        "function": "",
+        "function": "slot:leeftijd",
         "version": "1",
         "reference": "",
         "sourcetext": "Rond het worden van welke leeftijd wil je meer weten?",
@@ -84,7 +84,7 @@
       },
       {
           "fact": "[indicatedAgeChange]",
-          "function": "",
+          "function": "intent:binnenkort-jarig,
           "version": "1",
           "reference": "",
           "sourcetext": "Ben je binnenkort jarig?",
@@ -92,7 +92,15 @@
       },
       {
           "fact": "[want-support]",
-          "function": "",
+          "function": "intent:ja-wil-support",
+          "version": "1",
+          "reference": "",
+          "sourcetext": "Wil je hulp bij wat je kan/moet regelen wanneer je leeftijd veranderd?",
+          "explanation": ""
+      },
+      {
+          "fact": "[age-support]",
+          "function": "intent:hulp-life-event-leeftijd",
           "version": "1",
           "reference": "",
           "sourcetext": "Wil je hulp bij wat je kan/moet regelen wanneer je leeftijd veranderd?",
